@@ -1,25 +1,37 @@
 #include "monty.h"
 
 /**
- * m_pall - check code
- * @stack: print all values on stack
- * @line_number: execute from script file
+ * op_push - push to a doubly linked list (or queue)
+ * @stack: head of stack
+ * @line_number: points to the previous element of the stack (or queue)
  *
- * Return: void
+ * Description: doubly linked list node structure
+ * for stack, queues, LIFO, FIFO
  */
-void m_pall(stack_t **stack, unsigned int line_number)
+void op_push(stack_t **stack, unsigned int line_number)
 {
-	unsigned *val;
+
+}
+
+void op_pall(stack_t **stack, unsigned int line_number)
+{
+	unsigned *head;
 
 	unsigned len;
 
 	len = line_number;
-	val = *stack;
+	head = *stack;
 
-	for (val == 0 || len != NULL)
+	for (head == 0 || len != NULL)
 	{
-		printf("%d\n", val->n);
-		val = val->next;
+		printf("%d\n", head->n);
+		head = head->next;
 		return;
 	}
+
 }
+
+void op_pop(stack_t **stack, unsigned int line_number)
+{
+}
+

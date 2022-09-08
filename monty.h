@@ -13,7 +13,9 @@
 #include <limits.h>
 #include <ctype.h>
 
-void m_pall(stack_t **stack, unsigned int line_number);
+
+extern int global_letters;
+void read_file(const char* filename);
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -44,5 +46,11 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
+extern void (*get_opfnc(char *str))(stack_t **stack, unsigned int line_number);
+extern void op_push(stack_t **stack, unsigned int line_number);
+extern void op_pall(stack_t **stack, unsigned int line_number);
+extern void op_pint(stack_t **stack, unsigned int line_number);
+void read_file(const char* filename);
 
 #endif
