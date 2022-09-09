@@ -13,6 +13,19 @@ void (*get_opfnc(char *str))(stack_t **stack, unsigned int)
 	{"pint", op_pint},
 	{"pop", op_pop},
 	{"swap", op_swap},
+	{"add", op_add},
+	{"nop", op_nop},
+	{"sub", op_sub},
+	{"div", op_div},
+	{"mul", op_mul},
+	{"mod", op_mod},
+	{"pchar", op_pchar},
+	{"pstr", op_pstr},
+	{"rotl", op_rotl},
+	{"rotr", op_rotr},
+	{"queue", op_queue},
+	{"stack", op_stack},
+
 	{NULL, NULL}
 	};
 	int i;

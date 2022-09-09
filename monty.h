@@ -52,5 +52,19 @@ extern void op_push(stack_t **stack, unsigned int line_number);
 extern void op_pall(stack_t **stack, unsigned int line_number);
 extern void op_pint(stack_t **stack, unsigned int line_number);
 void read_file(const char* filename);
+void m__swap(stack_t **stack, unsigned int line_number);
+void m_add(stack_t **stack, unsigned int line_number);
+void m_pop(stack_t **stack, unsigned int line_number);
+void m_nop(stack_t **stack, unsigned int line_number);
+void m_sub(stack_t **stack, unsigned int line_number);
+void m__mod(stack_t **stack, unsigned int line_number);
+void m_mul(stack_t **stack, unsigned int line_number);
+void m_div(stack_t **stack, unsigned int line_number);
+void m_pchar(stack_t **stack, unsigned int line_number);
+void m_stack(stack_t **stack, unsigned int line_number);
+void m_queue(stack_t **stack, unsigned int line_number);
+void m_pstr(stack_t **stack, unsigned int line_number);
+void m_rotl(stack_t **stack, unsigned int line_number);
+void m_rotr(stack_t **stack, unsigned int line_number);
 
 #endif
