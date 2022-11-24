@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+* op_pint - check code
+* @stack: pointer of the stack
+* @line_number: line of the stack
+* Return: pointer
+**/
 void op_pint(stack_t **stack, unsigned int line_number)
 {
 	stack_t *head;
