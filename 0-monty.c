@@ -1,4 +1,4 @@
- #include "monty.h"
+#include "monty.h"
 
 /**
 * main - print the num of args you passed to it
@@ -8,14 +8,17 @@
 **/
 int main(int argc, char *argv[])
 {
+	if (argc != 2)
+		return  (EXIT_FAILURE);
 
-	if (argc < 2 || argc > 2 || argv[1] == NULL)
-	{
-		dprintf(2, "USAGE: %s file:\n", argv[0]);
-        exit(1);
-	}
+		if (argc < 2 || argc > 2 || argv[1] == NULL)
+		{
+			dprintf(2, "USAGE: %s file:\n", argv[0]);
+			exit(1);
+		}
 
-	read_file(const char* filename);
+	read_file(*filename);
 
-	return (0);
+	return (EXIT_SUCCESS);
 }
+

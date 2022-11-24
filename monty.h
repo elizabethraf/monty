@@ -51,6 +51,7 @@ extern void (*get_opfnc(char *str))(stack_t **stack, unsigned int line_number);
 extern void op_push(stack_t **stack, unsigned int line_number);
 extern void op_pall(stack_t **stack, unsigned int line_number);
 extern void op_pint(stack_t **stack, unsigned int line_number);
+stack_t *pchar(stack_t **stack, unsigned int line_num);
 void read_file(const char* filename);
 void m__swap(stack_t **stack, unsigned int line_number);
 void m_add(stack_t **stack, unsigned int line_number);
